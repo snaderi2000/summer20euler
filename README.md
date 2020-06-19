@@ -11,8 +11,8 @@ Email fitzgerald at csus dot edu for the password.
 Day |   Problems |   Presenters
 --- |   ------- |   ----------
 June 19 |  4,9  |   Paul, Clark 
-June 26 |       |
-July  3 |       |
+June 26 | 12,14     |  John: 12, Shawheen & Hera: 14
+July  3 | 18     |
 July 10 |       |
 July 17 |       |
 July 24 |       |
