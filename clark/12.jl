@@ -19,6 +19,7 @@ function count_div(x)
     f = factor(Vector, x)
     pushfirst!(f, 1)
     
+    # ps contains 2^length(f) elements, which gets big fast.
     ps = powerset(f) 
     divisors = Set(prod(s) for s in ps)
     length(divisors)
