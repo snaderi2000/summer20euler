@@ -8,12 +8,12 @@ We'll meet Fridays, 1pm Pacific time.
 The Zoom meeting ID is 959 8505 2576.
 Email fitzgerald at csus dot edu for the password.
 
-Day |   Problems |   Presenters
---- |   ------- |   ----------
+Day     |   Problems |   Presenters
+---     |   ------- |   ----------
 June 19 |  4,9  |   Paul, Clark 
-June 26 | 12,14     |  John: 12, Shawheen & Hera: 14
-July  3 | 18     |
-July 10 |       |
+June 26 | 12,14 |  John: 12, Shawheen & Hera: 14
+July  3 | 18,21 |  Clark & Stephen: 18, Paul: 21
+July 10 | 23,   |
 July 17 |       |
 July 24 |       |
 
