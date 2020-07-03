@@ -42,22 +42,27 @@ Check if a number is amicable, using precomputed sum of proper divisors
 """
 is_amicable = function(n, spd)
     m = spd[n]
-    N = length(spd)
-    # I've used this ternary operator a few times, it's pretty clever
-    m ≤ N ? spd[m] == n : false
+    # I've used this ternary operator a few times, it's clever, but too busy here for my tastes
+    #m ≤ N ? spd[m] == n && m != n : false
+    if m ≤ length(spd)
+        spd[m] == n && m != n
+    else
+        false
+    end
 end
 
 
 """
-Sum of all the amicable numbers less than N
+All the amicable numbers less than N
 """
-sum_amicable = function(N = 10000)
+amicable = function(N = 10000)
     possible = 2:(N-1)
     spd = sum_divisors.(possible)
-    # Just to line things up
+    # Putting 0 in front will line things up.
     pushfirst!(spd, 0)
-    sum(n for n in possible if is_amicable(n, spd))
+    (n for n in possible if is_amicable(n, spd))
 end
 
 
-sum_amicable()
+#a = collect(amicable())
+sum(amicable())
