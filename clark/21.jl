@@ -1,4 +1,4 @@
-using Primes
+using Primes: factor
 
 """
 Find all divisors of n
@@ -35,3 +35,29 @@ julia> sum_divisors(220)
 sum_divisors = function(n)
     sum(divisors(n)) - n
 end
+
+
+"""
+Check if a number is amicable, using precomputed sum of proper divisors
+"""
+is_amicable = function(n, spd)
+    m = spd[n]
+    N = length(spd)
+    # I've used this ternary operator a few times, it's pretty clever
+    m ≤ N ? spd[m] == n : false
+end
+
+
+"""
+Sum of all the amicable numbers less than N
+"""
+sum_amicable = function(N = 10000)
+    possible = 2:(N-1)
+    spd = sum_divisors.(possible)
+    # Just to line things up
+    pushfirst!(spd, 0)
+    sum(n for n in possible if is_amicable(n, spd))
+end
+
+
+sum_amicable()
